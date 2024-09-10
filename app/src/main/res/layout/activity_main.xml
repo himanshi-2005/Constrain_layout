@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Raze Galactic"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E80E3710"
+        android:paddingLeft="10dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DCA"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        android:textSize="30sp"
+        android:background="@color/peach"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="30dp"
+        android:maxWidth="300dp"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        android:text="MARS"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#E80E3710"
+        android:textColor="@color/white"
+        android:padding="40dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/text2"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        android:text="DCA"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="#E80E3710"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/white"
+        android:padding="40dp"
+
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#BD390F"
+        app:layout_constraintTop_toBottomOf="@+id/text4"
+        app:layout_constraintStart_toStartOf="@+id/btn2"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One Way"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp"
+            android:paddingEnd="60dp"
+            />
+        <Switch
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/text5"
+            android:padding="20dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text4"
+        app:layout_constraintStart_toStartOf="@id/text4"
+        android:layout_marginTop="80dp"
+        android:padding="20dp"
+        android:text="1 Traveller"
+        android:textSize="20sp"
+        android:backgroundTint="#BD390F"
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Depart"
+        android:layout_marginHorizontal="10dp"
+        android:backgroundTint="#BD390F"
+
+        />
+<ImageView
+    android:id="@+id/img1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/img"
+    app:layout_constraintTop_toBottomOf="@+id/text1"
+    app:layout_constraintStart_toStartOf="@+id/text4"
+    app:layout_constraintEnd_toEndOf="@+id/text4"/>
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/img"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="@+id/text2"
+        app:layout_constraintEnd_toEndOf="@+id/text2"/>
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintStart_toStartOf="@+id/text3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        app:layout_constraintStart_toStartOf="@id/img1"
+        app:layout_constraintEnd_toEndOf="@id/img1"
+        android:text="Space Station"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img2"
+        app:layout_constraintStart_toStartOf="@id/img2"
+        app:layout_constraintEnd_toEndOf="@id/img2"
+        android:text="Flights"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/img3"
+        app:layout_constraintStart_toStartOf="@id/img3"
+        app:layout_constraintEnd_toEndOf="@id/img3"
+        android:text="Rovers"
+        android:textSize="15sp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
